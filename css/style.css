@@ -43,17 +43,33 @@
     padding: 0;
     margin: 0;
 }
+
 .container {
+    width: 950px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.left-side {
+    float: left;
+    width: 300px;
+}
+
+.right-side {
+    margin-left: 300px;
+}
+
+.img-container {
     position: relative;
     overflow: hidden;
     display: inline-block;
 }
-.size-1 {
-    width: 404px;
-    height: 270px;
-    display: block;
-    max-width: 100%;
-}
+/*.size-1 {*/
+    /*width: 404px;*/
+    /*height: 270px;*/
+    /*display: block;*/
+    /*max-width: 100%;*/
+/*}*/
 
 .zoom {
     position: absolute;

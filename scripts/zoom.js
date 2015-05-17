@@ -88,7 +88,6 @@
     };
 
     Zoom.prototype.load = function(){
-
         if(this.settings.url) {
             this.zoomImg.setAttribute('src', this.settings.url);
         } else {
@@ -140,7 +139,19 @@
         this.zoomImg.style.top = top + 'px';
     };
 
+    Zoom.prototype.destroy = function(){
+        if(!this.settings) return;
+
+        this.settings = null;
+        this.target.removeChild(this.zoomImg);
+
+        this.zoomImg = null;
+
+    }
+
     Zoom.prototype.init = function(element, options){
+
+        this.destroy();
 
         this.settings = extend({}, defaults, options);
 

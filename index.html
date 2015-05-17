@@ -7,10 +7,19 @@
     <script data-main="scripts/main" src="scripts/require.min.js"></script>
 </head>
 <body>
-    <div class="container" id="zoomer">
-        <img src="imgs/bg.jpg" alt="bg" class="size-1"/>
-        <span class="iconfont icon-plus" id="plus"></span>
-        <span class="iconfont icon-minus" id="minus"></span>
+    <div class="container">
+        <div class="left-side">
+            <form action="">
+                <input type="file" id="imgLoader">
+            </form>
+        </div>
+        <div class="right-side">
+            <div class="img-container" id="zoomer">
+                <img src="" id="img_pre">
+                <span class="iconfont icon-plus" id="plus"></span>
+                <span class="iconfont icon-minus" id="minus"></span>
+            </div>
+        </div>
     </div>
 </body>
 </html>
